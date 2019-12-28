@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Cruiser Chaos</title>
+
+        <script src="js/Three.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/three.min.js"></script>
+        <script src="js/Detector.js"></script>
+        <script src="js/Stats.js"></script>
+        <script src="js/OrbitControls.js"></script>
+        <script src="js/THREEx.KeyboardState.js"></script>
+        <script src="js/THREEx.FullScreen.js"></script>
+        <script src="js/THREEx.WindowResize.js"></script>
+        <script src='js/DAT.GUI.min.js'></script>
+
+        <script src="Game.js"></script>
+        <script src="Engine.js"></script>
+
+        <script src="utilities/Timer.js"></script>
+        <script src="utilities/Colors.js"></script>
+        <script src="utilities/Controller.js"></script>
+        <script src="utilities/CallbackHandler.js"></script>
+        <script src="utilities/Callback.js"></script>
+        <script src="utilities/CameraController.js"></script>
+        <script src="utilities/DebugGUI.js"></script>
+        <script src="utilities/DebugGUIController.js"></script>
+        <script src="utilities/MenuController.js"></script>
+        <script src="utilities/GameController.js"></script>
+        <script src="utilities/SpawnController.js"></script>
+        <script src="utilities/BuildingSpawnController.js"></script>
+        <script src="utilities/StudentSpawnController.js"></script>
+        <script src="utilities/Direction.js"></script>
+        <script src="utilities/Component.js"></script>
+        <script src="utilities/Transform.js"></script>
+        <script src="utilities/MathHelper.js"></script>
+        <script src="utilities/Render.js"></script>
+
+        <script src="models/GameObject.js"></script>
+        <script src="models/Cloud.js"></script>
+        <script src="models/Rain.js"></script>
+        <script src="models/Spawner.js"></script>
+        <script src="models/Particle.js"></script>
+        <script src="models/ParticleSystem.js"></script>
+        <script src="models/Sky.js"></script>
+        <script src="models/Cruiser.js"></script>
+        <script src="models/Goose.js"></script>
+        <script src="models/Roadblock.js"></script>
+        <script src="models/Particle.js"></script>
+        <script src="models/BoxCollider.js"></script>
+        <script src="models/RollingWorld.js"></script>
+        <script src="models/Road.js"></script>
+        <script src="models/RoadBlock.js"></script>
+        <script src="models/Pothole.js"></script>
+        <script src="models/GooseNew.js"></script>
+        <script src="models/Building.js"></script>
+        <script src="models/Character.js"></script>
+
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+
+<body>
+    <div class="world" id="world">
+      <div class="show" id="beginGameMenu">
+        <div id="gameTitle">Cruiser Chaos</div>
+        <div id="rules">Rules</div>
+        <div style="text-align:center;width:50%;margin:auto;">
+          <div id="rulesDescription">A - Left, D - Right</div>
+          <div id="rulesDescription">You start the game with 3 students, you can pick up more</div>
+          <div id="rulesDescription">If you hit an obstacle, you lose a student</div>
+          <div id="rulesDescription">If you run out of students, you lose</div>
+        </div>
+        <div id="pressAnyKey">Press any key to begin</div>
+      </div>
+      <div id="gameUI">
+        <div id="scoreContainer">
+          <div class="label">Score</div>
+          <div id="score">000</div>
+        </div>
+        <div id="healthContainer">
+          <div class="label">Students</div>
+          <div id="health">3</div>
+        </div>
+      </div>
+      <div id="gameOverMenu">Game Over
+      <div id="pressAnyKey">Press any key to play again</div>
+      </div>
+    </div>
+</body>
+
+</html>

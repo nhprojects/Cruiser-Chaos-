@@ -1,0 +1,177 @@
+
+/* Adapted from https://codepen.io/Yakudoo/pen/YGxYZj*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#beginGameMenu {
+  position:absolute;
+  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size:120px;
+  text-align:center;
+  color:#FFFFFF;
+  opacity:0;
+  left:50%;
+  top:50%;
+  width:100%;
+  transform : translate(-50%,-100%);
+}
+
+#beginGameMenu.show{
+  opacity:1;
+  transform : translate(-50%,-50%);
+}
+
+#gameOverMenu {
+  position:absolute;
+  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size:120px;
+  text-align:center;
+  color:#FFFFFF;
+  opacity:0;
+  left:50%;
+  top:50%;
+  width:100%;
+  transform : translate(-50%,-100%);
+  user-select: none;
+}
+
+#gameOverMenu.show {
+    opacity:1;
+    transform : translate(-50%,-50%);
+}
+
+#gameUI {
+  position:absolute;
+  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  color:#FFFFFF;
+  opacity:0;
+  left:50%;
+  top:0px;
+  width:100%;
+  transform : translate(-50%,-100%);
+  user-select: none;
+  z-index:1;
+}
+
+#gameUI.show {
+    opacity:1;
+    transform : translate(-50%,-50%);
+}
+
+#gameTitle {
+  position:absolute;
+  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size:120px;
+  text-align:center;
+  color:#FFFFFF;
+  left:50%;
+  top:20%;
+  width:100%;
+  transform : translate(-50%,-100%);
+}
+
+#rules {
+  position:relative;
+  width:40%;
+  top:40%;
+  margin: auto;
+  margin-bottom:50px;
+  padding-top:100px;
+  padding-bottom:0px;
+  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+  color:#FFFFFF;
+  font-size:16px;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  text-decoration: underline;
+}
+
+#rulesDescription {
+  position:relative;
+  width:100%;
+  top:40%;
+  margin: auto;
+  margin-bottom:50px;
+  margin-top:-30px;
+  font-family:'Roboto', sans-serif;
+  font-weight:lighter;
+  color:#FFFFFF;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  text-align : center;
+  user-select: none;
+}
+
+#pressAnyKey {
+  position:relative;
+  width:100%;
+  top:40%;
+  margin: auto;
+  margin-bottom:50px;
+  font-family:'Roboto', sans-serif;
+  color:#FFFFFF;
+  font-size:24px;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  text-align : center;
+  user-select: none;
+}
+
+#scoreContainer {
+  position:absolute;
+  left:50%;
+  top:50px;
+  transform:translate(-50%,0%);
+  user-select: none;
+}
+
+.label{
+  position:relative;
+  font-family:'Roboto', sans-serif;
+  text-transform:uppercase;
+  color:#ffa873;
+  font-size:12px;
+  letter-spacing:2px;
+  text-align:center;
+  margin-bottom:5px;
+}
+
+
+#score{
+  position:relative;
+  text-transform:uppercase;
+  color:#dc5f45;
+  font-size:40px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#healthContainer {
+  position:absolute;
+  transform:translate(-50%,0%);
+  user-select: none;
+  right:20px;
+  top:50px;
+}
+
+#health{
+  position:relative;
+  text-transform:uppercase;
+  color:#dc5f45;
+  font-size:60px;
+  font-family:'Roboto';
+  text-align:center;
+  width:100px;
+  height:100px;
+}
